@@ -10,7 +10,11 @@
 **Task 4:** Activate the stream with a python file.
 
 ### Requirements
-	ffmpeg, Python3
+	Python3, ffmpeg compiled with the flags:
+
+  ```
+  ./configure  --prefix=/usr/local --enable-gpl --enable-nonfree --enable-libass --enable-libfdk-aac --enable-libfreetype --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libx265 --enable-libopus --enable-libxvid --samples=fate-suite --enable-libaom
+  ```
 
 ### Executing
 Run "python3 -i Stream.py" in the same folder that the video you want to resize/transcode. The execution will wait for you to enter commands.
@@ -26,7 +30,7 @@ resize_and_transcode()
 ```python
 collage_2x2()
 ```
-Here we can see the results for each resolution defined. Different codecs are organized as:
+Here we can see the results for the max and the min resolutions. Different codecs are organized as:
 
 | Image         | | |
 | ------------- |:-------------:|:-------------:|
@@ -46,44 +50,19 @@ Regarding the bitrate:
 | VP8 | 313 |
 | VP9 | 277 |
 
-**360x240**
-
-Quality with the four codecs is so bad because of the resolution.
-Regarding the color, both VP8 and VP9 are a bit yellowish in comparison with the original.
-![alt text](https://github.com/MaciAC/VideoCoding_S3/blob/master/images/360x240.png "360x240")
-Regarding the bitrate:
-| Codec| bitrate (kb/s) |
-| ------|:-------------:|
-| AV1 | 434 |
-| h265 | 431 |
-| VP8 | 313 |
-| VP9 | 277 |
-
-**720x480**
-
-Quality with the four codecs is so bad because of the resolution.
-Regarding the color, both VP8 and VP9 are a bit yellowish in comparison with the original.
-![alt text](https://github.com/MaciAC/VideoCoding_S3/blob/master/images/720x480.png "720x480")
-Regarding the bitrate:
-| Codec| bitrate (kb/s) |
-| ------|:-------------:|
-| AV1 | 434 |
-| h265 | 431 |
-| VP8 | 313 |
-| VP9 | 277 |
-
 **1280x720**
 
-Quality with the four codecs is so bad because of the resolution.
-Regarding the color, both VP8 and VP9 are a bit yellowish in comparison with the original.
+With the highest resoluton we can see that vp8 is the worst in terms of quality preservation.
+Then VP9 keeps the yellowish filter as in the previous result and h26 works pretty well.
+AV1 is the best in terms of quality and frame rate, but it tooks a lot of time to encode.
 ![alt text](https://github.com/MaciAC/VideoCoding_S3/blob/master/images/1280x720.png "1280x720")
 Regarding the bitrate:
 | Codec| bitrate (kb/s) |
 | ------|:-------------:|
-| AV1 | 434 |
-| h265 | 431 |
-| VP8 | 313 |
-| VP9 | 277 |
+| AV1 | 1079 |
+| h265 | 856 |
+| VP8 | 611 |
+| VP9 | 1352 |
 
 **Task 3 & 4:** While Stream.py is interactively executing run:
 
