@@ -1,5 +1,5 @@
 # VideoCoding_S3
-##Seminar 3 of Video Coding subject in UPF
+## Seminar 3 of Video Coding subject in UPF
 
 **Task 1:** Resize as first seminar and transcode to VP8, VP9, h265 & AV1.
 
@@ -34,6 +34,7 @@ Here we can see the results for each resolution defined. Different codecs are or
 | | VP8 | VP9 |
 
 **160x120**
+
 Quality with the four codecs is so bad because of the resolution.
 Regarding the color, both VP8 and VP9 are a bit yellowish in comparison with the original.
 ![alt text](https://github.com/MaciAC/VideoCoding_S3/blob/master/images/160x120.png "160x120")
@@ -44,12 +45,45 @@ Regarding the bitrate:
 | h265 | 431 |
 | VP8 | 313 |
 | VP9 | 277 |
+
 **360x240**
+
+Quality with the four codecs is so bad because of the resolution.
+Regarding the color, both VP8 and VP9 are a bit yellowish in comparison with the original.
 ![alt text](https://github.com/MaciAC/VideoCoding_S3/blob/master/images/360x240.png "360x240")
+Regarding the bitrate:
+| Codec| bitrate (kb/s) |
+| ------|:-------------:|
+| AV1 | 434 |
+| h265 | 431 |
+| VP8 | 313 |
+| VP9 | 277 |
+
 **720x480**
+
+Quality with the four codecs is so bad because of the resolution.
+Regarding the color, both VP8 and VP9 are a bit yellowish in comparison with the original.
 ![alt text](https://github.com/MaciAC/VideoCoding_S3/blob/master/images/720x480.png "720x480")
+Regarding the bitrate:
+| Codec| bitrate (kb/s) |
+| ------|:-------------:|
+| AV1 | 434 |
+| h265 | 431 |
+| VP8 | 313 |
+| VP9 | 277 |
+
 **1280x720**
+
+Quality with the four codecs is so bad because of the resolution.
+Regarding the color, both VP8 and VP9 are a bit yellowish in comparison with the original.
 ![alt text](https://github.com/MaciAC/VideoCoding_S3/blob/master/images/1280x720.png "1280x720")
+Regarding the bitrate:
+| Codec| bitrate (kb/s) |
+| ------|:-------------:|
+| AV1 | 434 |
+| h265 | 431 |
+| VP8 | 313 |
+| VP9 | 277 |
 
 **Task 3 & 4:** While Stream.py is interactively executing run:
 
