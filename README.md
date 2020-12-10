@@ -33,7 +33,10 @@ The diferent codecs are organized as:
 | | AV1 | h265 |
 | | VP8 | VP9 |
 
-![alt text](https://github.com/MaciAC/VideoCoding_S3/images/1280x720.png "1280x720")
+![alt text](https://github.com/MaciAC/VideoCoding_S3/blob/master/images/1280x720.png "1280x720")
+![alt text](https://github.com/MaciAC/VideoCoding_S3/blob/master/images/720x480.png "720x480")
+![alt text](https://github.com/MaciAC/VideoCoding_S3/blob/master/images/360x240.png "360x240")
+![alt text](https://github.com/MaciAC/VideoCoding_S3/blob/master/images/160x120.png "160x120")
 
 
 
