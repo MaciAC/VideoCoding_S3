@@ -15,19 +15,29 @@
 ### Executing
 Run "python3 -i Stream.py" in the same folder that the video you want to resize/transcode. The execution will wait for you to enter commands.
 
-Task 1. While Stream.py is interactively executing run:
+**Task 1:** While Stream.py is interactively executing run:
 
 ```python
 resize_and_transcode()
 ```
 
-Task 2. While Stream.py is interactively executing run:
+**Task 2:** While Stream.py is interactively executing run:
 
 ```python
 collage_2x2()
 ```
+The diferent codecs are organized as:
 
-Task 3 & 4. While Stream.py is interactively executing run:
+| Image         | | |
+| ------------- |:-------------:|:-------------:|
+| | AV1 | h265 |
+| | VP8 | VP9 |
+
+![alt text](https://github.com/MaciAC/VideoCoding_S3/images/1280x720.png "1280x720")
+
+
+
+**Task 3 & 4:** While Stream.py is interactively executing run:
 
 ```python
 stream("filename", "port")

@@ -17,22 +17,22 @@ def resize_and_transcode():
     vid = []
     while not vid:
         count, videos = print_files_indir()
-        idx = int(input("Choose video number {} \n".format(len(collage_vids) + 1)))
+        idx = int(input("Choose video with the number besides it \n"))
         if idx not in range(count):
             print("BAD INPUT!")
             continue
         vid.append(videos[idx])
-
+    filename = vid[0]
     sizes = ["1280x720", "720x480", "360x240", "160x120"]
     idx = int(input("\nWhich resize do you want to apply?\n 1: 720p\n 2: 480p\n 3: 360x240\n 4: 160x120 \n")) - 1
 
     out_webm = sizes[idx] + "_" + filename.split('.')[0] + ".webm"
     out_mp4 = sizes[idx] + "_" + filename.split('.')[0] + ".mp4"
 
-    os.system("ffmpeg -i {} -c:v libvpx -c:a libvorbis -vf scale={},setsar=1:1 {}".format(vid[0], sizes[idx], "vp8_" + out_webm ))
-    os.system("ffmpeg -i {} -c:v libvpx-vp9 -c:a libvorbis -vf scale={},setsar=1:1 {}".format(vid[0], sizes[idx], "vp9_" + out_webm))
-    os.system("ffmpeg -i {} -c:v libx265 -vf scale={},setsar=1:1 {}".format(vid[0], sizes[idx], "h265_" + out_mp4))
-    os.system("ffmpeg -i {} -c:v libaom-av1 -vf scale={},setsar=1:1 {}".format(vid[0], sizes[idx], "av1_" + out_mp4))
+    os.system("ffmpeg -i {} -c:v libvpx -c:a libvorbis -vf scale={},setsar=1:1 {}".format(filename, sizes[idx], "vp8_" + out_webm ))
+    os.system("ffmpeg -i {} -c:v libvpx-vp9 -c:a libvorbis -vf scale={},setsar=1:1 {}".format(filename, sizes[idx], "vp9_" + out_webm))
+    os.system("ffmpeg -i {} -c:v libx265 -vf scale={},setsar=1:1 {}".format(filename, sizes[idx], "h265_" + out_mp4))
+    os.system("ffmpeg -i {} -c:v libaom-av1 -vf scale={},setsar=1:1 {}".format(filename, sizes[idx], "av1_" + out_mp4))
 
 
 
