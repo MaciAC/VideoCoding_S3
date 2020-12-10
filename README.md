@@ -17,24 +17,34 @@ Run "python3 -i Stream.py" in the same folder that the video you want to resize/
 
 Task 1. While Stream.py is interactively executing run:
 
+```python
 resize_and_transcode()
+```
 
 Task 2. While Stream.py is interactively executing run:
 
+```python
 collage_2x2()
+```
 
 Task 3 & 4. While Stream.py is interactively executing run:
 
+```python
 stream("filename", "port")
+```
 
 Where filename is the video you want to stream and port the one you want to use.
 
 Then, in a new terminal run:
 
+```
 vlc udp://@:import
+```
 
 Where port is the one you used in the previous command.
 
 WARNING: If you are in a mac vlc probably will not be correctly executed. Run this before the previous command:
 
+```
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
+```
