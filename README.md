@@ -38,7 +38,7 @@ Where filename is the video you want to stream and port the one you want to use.
 Then, in a new terminal run:
 
 ```
-vlc udp://@:import
+vlc udp://@:port
 ```
 
 Where port is the one you used in the previous command.
